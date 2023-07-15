@@ -1,5 +1,5 @@
 --create the table
-CREATE TABLE IF NOT EXISTS pacientes (dni VARCHAR(255) PRIMARY_KEY), nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT);
+CREATE TABLE IF NOT EXISTS pacientes (dni VARCHAR(255) PRIMARY_KEY, nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT);
 --delete initial records to avoid duplicates
 DELETE FROM pacientes WHERE dni = '666';
 DELETE FROM pacientes WHERE dni = '333';
