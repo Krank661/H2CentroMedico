@@ -115,3 +115,21 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-15 23:00:40] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
 [2023-07-15 23:01:00] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
 [2023-07-15 23:01:00] [ ERROR] [Main:28] La lista no contiene pacientes.
+[2023-07-15 23:11:52] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:11:53] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-15 23:52:12] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:52:12] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-15 23:52:12] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:52:12] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-15 23:53:25] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:53:26] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-15 23:53:26] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:53:26] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-15 23:54:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:54:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-15 23:54:09] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:54:09] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-15 23:55:49] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:55:49] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-15 23:55:49] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-15 23:55:49] [ INFO ] [DAOPatient:106] Desconectando de la base de datos

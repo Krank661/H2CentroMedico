@@ -1,9 +1,7 @@
-import enums.BloodTypes;
 import model.impl.Patient;
 import org.apache.log4j.Logger;
 import persistence.impl.DAOPatient;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
         showAllPatients();
+        showOnePatient("0");
     }
 
     public static void showAllPatients() {
@@ -31,6 +30,18 @@ public class Main {
         System.out.println("Todos los registros: ");
         patients.forEach(System.out::println);
 
+    }
+
+    public static void showOnePatient(String dni) {
+        DAOPatient daoPatient = new DAOPatient();
+
+        Patient patient = daoPatient.getByID(dni);
+        if(patient != null) {
+            System.out.println("Registro del paciente con el dni indicado:");
+            System.out.println(patient);
+        } else {
+            System.out.println("No hay ningún paciente registrado con ese dni");
+        }
     }
 
     public static void updatePatientData() {
