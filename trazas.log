@@ -1,0 +1,58 @@
+[2023-07-12 18:05:48] [ INFO ] [Main:35] Creando la tabla en la base de datos...
+[2023-07-12 18:05:48] [ ERROR] [Main:66] Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS pacientes (id INT, dni VARCHAR(255), nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS pacientes (id INT, dni VARCHAR(255), nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT [42001-220]
+[2023-07-12 18:10:34] [ INFO ] [Main:35] Creando la tabla en la base de datos...
+[2023-07-12 18:10:34] [ ERROR] [Main:66] Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS pacientes (id INT, dni VARCHAR(255), nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS pacientes (id INT, dni VARCHAR(255), nombre VARCHAR(255), telefono VARCHAR(255), grupo_sanguineo VARCHAR(255), edad INT [42001-220]
+[2023-07-12 18:12:10] [ INFO ] [Main:35] Creando la tabla en la base de datos...
+[2023-07-12 18:12:10] [ ERROR] [Main:66] Column "ALGUIEN" not found; SQL statement:
+INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (1, 666, Alguien, 123456, APOS, 19) [42122-220]
+[2023-07-12 18:12:35] [ INFO ] [Main:35] Creando la tabla en la base de datos...
+[2023-07-12 18:12:35] [ ERROR] [Main:66] Column "ALGUIEN" not found; SQL statement:
+INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (1, 666, Alguien, 123456, APOS, 19) [42122-220]
+[2023-07-12 18:14:15] [ INFO ] [Main:35] Creando la tabla en la base de datos...
+[2023-07-12 18:14:15] [ INFO ] [Main:39] Filas afectadas: 1
+[2023-07-12 18:14:15] [ INFO ] [Main:43] Filas afectadas: 1
+[2023-07-12 18:14:15] [ INFO ] [Main:62] Terminamos....
+[2023-07-13 13:16:02] [ INFO ] [Main:48] Registrando el driver y conectando a la base de datos.
+[2023-07-13 13:16:03] [ INFO ] [Main:70] Creando la tabla en la base de datos.
+[2023-07-13 13:16:03] [ INFO ] [Main:80] Insertando registros en la base de datos.
+[2023-07-13 13:16:03] [ INFO ] [Main:86] Filas afectadas en el insert: 1
+[2023-07-13 13:16:03] [ INFO ] [Main:90] Filas afectadas en el insert: 1
+[2023-07-13 13:16:03] [ INFO ] [Main:97] Realizando consultas
+[2023-07-13 13:16:03] [ INFO ] [Main:277] Modificando los datos de los pacientes.
+[2023-07-13 13:16:03] [ INFO ] [Main:284] Filas afectadas en el update: 2
+[2023-07-13 13:16:03] [ INFO ] [Main:288] Filas afectadas en el update: 2
+[2023-07-13 13:16:03] [ INFO ] [Main:300] Filas afectadas en el update: 2
+[2023-07-13 13:16:03] [ INFO ] [Main:304] Filas afectadas en el update: 2
+[2023-07-13 13:16:03] [ INFO ] [Main:61] Desconectando de la base de datos
+[2023-07-13 13:16:25] [ INFO ] [Main:48] Registrando el driver y conectando a la base de datos.
+[2023-07-13 13:16:25] [ INFO ] [Main:70] Creando la tabla en la base de datos.
+[2023-07-13 13:16:25] [ INFO ] [Main:80] Insertando registros en la base de datos.
+[2023-07-13 13:16:25] [ INFO ] [Main:86] Filas afectadas en el insert: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:90] Filas afectadas en el insert: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:97] Realizando consultas
+[2023-07-13 13:16:25] [ INFO ] [Main:277] Modificando los datos de los pacientes.
+[2023-07-13 13:16:25] [ INFO ] [Main:284] Filas afectadas en el update: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:288] Filas afectadas en el update: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:300] Filas afectadas en el delete: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:304] Filas afectadas en el delete: 1
+[2023-07-13 13:16:25] [ INFO ] [Main:61] Desconectando de la base de datos
+[2023-07-13 13:18:47] [ INFO ] [Main:48] Registrando el driver y conectando a la base de datos.
+[2023-07-13 13:18:47] [ INFO ] [Main:70] Creando la tabla pacientes en la base de datos.
+[2023-07-13 13:18:47] [ INFO ] [Main:80] Insertando registros en la base de datos.
+[2023-07-13 13:18:47] [ INFO ] [Main:86] Filas afectadas en el insert: 1
+[2023-07-13 13:18:47] [ INFO ] [Main:90] Filas afectadas en el insert: 1
+[2023-07-13 13:18:47] [ INFO ] [Main:97] Realizando consultas
+[2023-07-13 13:18:48] [ INFO ] [Main:277] Modificando los datos de los pacientes.
+[2023-07-13 13:18:48] [ INFO ] [Main:284] Filas afectadas en el update: 1
+[2023-07-13 13:18:48] [ INFO ] [Main:288] Filas afectadas en el update: 1
+[2023-07-13 13:18:48] [ INFO ] [Main:295] Borrando registros de pacientes.
+[2023-07-13 13:18:48] [ INFO ] [Main:301] Filas afectadas en el delete: 1
+[2023-07-13 13:18:48] [ INFO ] [Main:305] Filas afectadas en el delete: 1
+[2023-07-13 13:18:48] [ INFO ] [Main:61] Desconectando de la base de datos
+[2023-07-15 17:02:30] [ INFO ] [Main:44] Registrando el driver y conectando a la base de datos.
+[2023-07-15 17:02:30] [ INFO ] [Main:57] Desconectando de la base de datos
+[2023-07-15 17:07:07] [ ERROR] [Main:101] La lista no contiene pacientes.
+[2023-07-15 17:33:38] [ ERROR] [Main:30] La lista no contiene pacientes.
+[2023-07-15 17:34:49] [ ERROR] [Main:30] La lista no contiene pacientes.
