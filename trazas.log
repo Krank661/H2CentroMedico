@@ -60,3 +60,8 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-15 18:57:32] [ ERROR] [Main:30] La lista no contiene pacientes.
 [2023-07-15 18:57:48] [ ERROR] [Main:30] La lista no contiene pacientes.
 [2023-07-15 19:01:54] [ ERROR] [Main:30] La lista no contiene pacientes.
+[2023-07-15 19:41:29] [ ERROR] [Main:29] La lista no contiene pacientes.
+[2023-07-15 19:42:54] [ ERROR] [Main:30] La lista no contiene pacientes.
+[2023-07-15 19:42:58] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 19:42:58] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 19:42:58] [ ERROR] [Main:30] La lista no contiene pacientes.

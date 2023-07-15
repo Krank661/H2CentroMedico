@@ -13,10 +13,11 @@ import java.util.List;
 public class Main {
 
     public static Logger logger = Logger.getLogger(Main.class);
-    static DAOPatient daoPatient;
+    static DAOPatient daoPatient = new DAOPatient();
 
 
     public static void main(String[] args) {
+        System.out.println("test");
         showAllPatients();
     }
 
