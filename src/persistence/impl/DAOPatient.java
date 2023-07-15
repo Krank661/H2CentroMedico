@@ -15,7 +15,7 @@ public class DAOPatient implements IDAO<Patient, String> {
 
     static Connection conn;
 
-    static String URL = "jdbc:h2:~/test;INIT = RUNSCRIPT FROM 'create.sql'";
+    static String URL = "jdbc:h2:~/test;INIT=RUNSCRIPT FROM 'create.sql'";
     static String USER = "sa";
     static String PASS = "";
 
