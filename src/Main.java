@@ -9,7 +9,6 @@ import java.util.List;
 
 //TODO create DAO implementations for each class
 //TODO implement the CRUD operations for Patient
-//TODO fffffffffffffffffffffuuuuuuuuuuuuuuuuuuuucccccccccccccccckkkkkkkkkkkkkkkkk
 
 public class Main {
 
