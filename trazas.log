@@ -91,3 +91,18 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-15 20:11:14] [ ERROR] [Main:30] La lista no contiene pacientes.
 [2023-07-15 20:14:29] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
 [2023-07-15 20:14:29] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 20:21:51] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 20:21:51] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 20:22:03] [ ERROR] [Main:28] La lista no contiene pacientes.
+[2023-07-15 20:22:19] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 20:25:32] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 20:25:32] [ ERROR] [Main:28] La lista no contiene pacientes.
+[2023-07-15 22:38:34] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 22:38:34] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 22:38:34] [ ERROR] [Main:28] La lista no contiene pacientes.
+[2023-07-15 22:49:14] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 22:50:46] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 22:50:46] [ ERROR] [Main:28] La lista no contiene pacientes.
+[2023-07-15 22:53:28] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-15 22:53:29] [ ERROR] [DAOPatient:33] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-15 22:53:29] [ ERROR] [Main:28] La lista no contiene pacientes.
