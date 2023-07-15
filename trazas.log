@@ -59,3 +59,4 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-15 18:57:03] [ ERROR] [Main:30] La lista no contiene pacientes.
 [2023-07-15 18:57:32] [ ERROR] [Main:30] La lista no contiene pacientes.
 [2023-07-15 18:57:48] [ ERROR] [Main:30] La lista no contiene pacientes.
+[2023-07-15 19:01:54] [ ERROR] [Main:30] La lista no contiene pacientes.

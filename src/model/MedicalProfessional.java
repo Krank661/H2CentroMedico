@@ -2,7 +2,7 @@ package model;
 
 import java.util.Objects;
 
-public abstract class MedicalProfessional extends Person {
+public abstract class MedicalProfessional extends Person implements IMedicalProfessional{
 
     private Integer id;
 
