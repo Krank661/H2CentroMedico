@@ -114,7 +114,41 @@ public class DAOPatient implements IDAO<Patient, String> {
 
     @Override
     public int create(Patient patient) {
-        return 0;
+        logger.info("Registrando el driver y conectando a la base de datos.");
+        try {
+            Class.forName("org.h2.Driver");
+            conn = DriverManager.getConnection(URL, USER, PASS);
+        } catch (ClassNotFoundException ex) {
+            logger.error("Error: no se pudo cargar el controlador! " + ex.getMessage());
+            System.exit(1);
+        } catch (SQLException ex) {
+            logger.error("Error: no se ha podido establecer conexión con la base de datos.");
+        }
+
+        int affectedRows = 0;
+
+        try{
+            String query = "INSERT INTO pacientes (dni, nombre, telefono, grupo_sanguieno, edad) VALUES (?, ?, ?, ?, ?)";
+            PreparedStatement filter = conn.prepareStatement(query);
+            filter.setString(1, patient.getDni());
+            filter.setString(2, patient.getName());
+            filter.setString(3, patient.getPhoneNumber());
+            filter.setString(4, patient.getBloodType().toString());
+            filter.setInt(5, patient.getAge());
+
+            affectedRows = filter.executeUpdate(query);
+        } catch (SQLException ex) {
+            logger.error("Error: no se ha podido guardar el nuevo paciente.");
+        }
+
+        logger.info("Desconectando de la base de datos");
+        try {
+            conn.close();
+        } catch (SQLException ex) {
+            logger.error("Error: la conexión con la base de datos no ha podido finalizar correctamente.");
+        }
+
+        return affectedRows;
     }
 
     @Override
