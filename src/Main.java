@@ -1,3 +1,4 @@
+import enums.BloodTypes;
 import model.impl.Patient;
 import org.apache.log4j.Logger;
 import persistence.impl.DAOPatient;
@@ -14,7 +15,9 @@ public class Main {
 
     public static void main(String[] args) {
         showAllPatients();
-        showOnePatient("0");
+        showOnePatient("666");
+        insertAPatient();
+        showAllPatients();
     }
 
     public static void showAllPatients() {
@@ -42,6 +45,14 @@ public class Main {
         } else {
             System.out.println("No hay ningún paciente registrado con ese dni");
         }
+    }
+
+    public static void insertAPatient() {
+        DAOPatient daoPatient = new DAOPatient();
+        Patient patient = new Patient("111", "Miguel", "765432123", 64, BloodTypes.ONEG);
+
+        int affectedRows = daoPatient.create(patient);
+        System.out.println("Registros afectados en el insert: " + affectedRows);
     }
 
     public static void updatePatientData() {

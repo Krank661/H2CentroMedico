@@ -136,7 +136,7 @@ public class DAOPatient implements IDAO<Patient, String> {
             filter.setString(4, patient.getBloodType().toString());
             filter.setInt(5, patient.getAge());
 
-            affectedRows = filter.executeUpdate(query);
+            affectedRows = filter.executeUpdate();
         } catch (SQLException ex) {
             logger.error("Error: no se ha podido guardar el nuevo paciente.");
         }
