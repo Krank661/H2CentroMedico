@@ -128,7 +128,7 @@ public class DAOPatient implements IDAO<Patient, String> {
         int affectedRows = 0;
 
         try{
-            String query = "INSERT INTO pacientes (dni, nombre, telefono, grupo_sanguieno, edad) VALUES (?, ?, ?, ?, ?)";
+            String query = "INSERT INTO pacientes (dni, nombre, telefono, grupo_sanguineo, edad) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement filter = conn.prepareStatement(query);
             filter.setString(1, patient.getDni());
             filter.setString(2, patient.getName());

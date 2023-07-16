@@ -133,3 +133,19 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-15 23:55:49] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
 [2023-07-15 23:55:49] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
 [2023-07-15 23:55:49] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-16 20:42:35] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:117] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:42:36] [ ERROR] [DAOPatient:141] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:144] Desconectando de la base de datos
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:42:36] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 20:43:02] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:43:02] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 20:43:02] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:43:02] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-16 20:43:51] [ INFO ] [DAOPatient:117] Registrando el driver y conectando a la base de datos.
+[2023-07-16 20:45:02] [ ERROR] [DAOPatient:141] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-16 20:45:02] [ INFO ] [DAOPatient:144] Desconectando de la base de datos
