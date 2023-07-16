@@ -173,3 +173,15 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-16 21:03:09] [ INFO ] [DAOPatient:144] Desconectando de la base de datos
 [2023-07-16 21:03:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
 [2023-07-16 21:03:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 21:40:07] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:07] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:117] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:144] Desconectando de la base de datos
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:156] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:08] [ INFO ] [DAOPatient:183] Desconectando de la base de datos
+[2023-07-16 21:40:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-16 21:40:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos

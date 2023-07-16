@@ -18,6 +18,8 @@ public class Main {
         showOnePatient("666");
         insertAPatient();
         showAllPatients();
+        updatePatientData();
+        showAllPatients();
     }
 
     public static void showAllPatients() {
@@ -49,14 +51,18 @@ public class Main {
 
     public static void insertAPatient() {
         DAOPatient daoPatient = new DAOPatient();
-        Patient patient = new Patient("111", "Miguel", "765432123", 64, BloodTypes.ONEG);
+        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
 
         int affectedRows = daoPatient.create(patient);
         System.out.println("Registros afectados en el insert: " + affectedRows);
     }
 
     public static void updatePatientData() {
+        DAOPatient daoPatient = new DAOPatient();
+        Patient patient = new Patient("222", "Carlos", "76543166", 33, BloodTypes.ABPOS);
 
+        int affectedRows = daoPatient.update(patient);
+        System.out.println("Registros afectados en el update: " + affectedRows);
     }
 
     public static void deletePatients() {
