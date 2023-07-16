@@ -191,6 +191,29 @@ public class DAOPatient implements IDAO<Patient, String> {
 
     @Override
     public int delete(String dni) {
-        return 0;
+        logger.info("Registrando el driver y conectando a la base de datos.");
+        try {
+            Class.forName("org.h2.Driver");
+            conn = DriverManager.getConnection(URL, USER, PASS);
+        } catch (ClassNotFoundException ex) {
+            logger.error("Error: no se pudo cargar el controlador! " + ex.getMessage());
+            System.exit(1);
+        } catch (SQLException ex) {
+            logger.error("Error: no se ha podido establecer conexión con la base de datos.");
+        }
+
+        int affectedRows = 0;
+
+        try {
+            String query = "DELETE FROM pacientes WHERE dni = ?";
+            PreparedStatement filter = conn.prepareStatement(query);
+            filter.setString(1, dni);
+
+            affectedRows = filter.executeUpdate();
+        } catch (SQLException ex) {
+            logger.error("Error: se ha producido un error al consultar los registros.");
+        }
+
+        return affectedRows;
     }
 }
