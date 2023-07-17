@@ -6,8 +6,6 @@ import persistence.impl.DAOPatient;
 import java.util.ArrayList;
 import java.util.List;
 
-//TODO create DAO implementations for each class
-
 public class Main {
 
     public static Logger logger = Logger.getLogger(Main.class);
