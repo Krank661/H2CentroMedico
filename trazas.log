@@ -222,3 +222,22 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-17 10:29:13] [ INFO ] [DAOPatient:194] Registrando el driver y conectando a la base de datos.
 [2023-07-17 10:29:13] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
 [2023-07-17 10:29:13] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-17 16:50:07] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:75] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:106] Desconectando de la base de datos
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:119] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:146] Desconectando de la base de datos
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:08] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:158] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:185] Desconectando de la base de datos
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:224] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:262] Desconectando de la base de datos
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:274] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:312] Desconectando de la base de datos
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:196] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
+[2023-07-17 16:50:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos

@@ -3,13 +3,13 @@ package persistence.impl;
 import enums.BloodTypes;
 import model.impl.Patient;
 import org.apache.log4j.Logger;
-import persistence.IDAO;
+import persistence.IDAOPatient;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DAOPatient implements IDAO<Patient, String> {
+public class DAOPatient implements IDAOPatient {
 
     public static Logger logger = Logger.getLogger(DAOPatient.class);
 
@@ -111,6 +111,8 @@ public class DAOPatient implements IDAO<Patient, String> {
         }
         return p;
     }
+
+
 
     @Override
     public int create(Patient patient) {
@@ -215,5 +217,105 @@ public class DAOPatient implements IDAO<Patient, String> {
         }
 
         return affectedRows;
+    }
+
+    @Override
+    public List<Patient> getByName(String name) {
+        logger.info("Registrando el driver y conectando a la base de datos.");
+        try {
+            Class.forName("org.h2.Driver");
+            conn = DriverManager.getConnection(URL, USER, PASS);
+        } catch (ClassNotFoundException ex) {
+            logger.error("Error: no se pudo cargar el controlador! " + ex.getMessage());
+            System.exit(1);
+        } catch (SQLException ex) {
+            logger.error("Error: no se ha podido establecer conexión con la base de datos.");
+        }
+
+        List<Patient> patients = new ArrayList<>();
+
+        try {
+            String query = "SELECT * FROM pacientes WHERE nombre = ?";
+            PreparedStatement filter = conn.prepareStatement(query);
+            filter.setString(1, name);
+            ResultSet rs = filter.executeQuery();
+
+            while (rs.next()) {
+                Patient p = new Patient();
+
+                p.setDni(rs.getString("dni"));
+                p.setName(rs.getString("nombre"));
+                p.setPhoneNumber(rs.getString("telefono"));
+                p.setBloodType(BloodTypes.valueOf(rs.getString("grupo_sanguineo")));
+                p.setAge(rs.getInt("edad"));
+
+                patients.add(p);
+            }
+
+            rs.close();
+            filter.close();
+
+        } catch (SQLException ex) {
+            logger.error("Error: se ha producido un error al consultar los registros.");
+        }
+
+        logger.info("Desconectando de la base de datos");
+        try {
+            conn.close();
+        } catch (SQLException ex) {
+            logger.error("Error: la conexión con la base de datos no ha podido finalizar correctamente.");
+        }
+
+        return patients;
+    }
+
+    @Override
+    public List<Patient> getByPhoneNumber(String phoneNumber) {
+        logger.info("Registrando el driver y conectando a la base de datos.");
+        try {
+            Class.forName("org.h2.Driver");
+            conn = DriverManager.getConnection(URL, USER, PASS);
+        } catch (ClassNotFoundException ex) {
+            logger.error("Error: no se pudo cargar el controlador! " + ex.getMessage());
+            System.exit(1);
+        } catch (SQLException ex) {
+            logger.error("Error: no se ha podido establecer conexión con la base de datos.");
+        }
+
+        List<Patient> patients = new ArrayList<>();
+
+        try {
+            String query = "SELECT * FROM pacientes WHERE telefono = ?";
+            PreparedStatement filter = conn.prepareStatement(query);
+            filter.setString(1, phoneNumber);
+            ResultSet rs = filter.executeQuery();
+
+            while (rs.next()) {
+                Patient p = new Patient();
+
+                p.setDni(rs.getString("dni"));
+                p.setName(rs.getString("nombre"));
+                p.setPhoneNumber(rs.getString("telefono"));
+                p.setBloodType(BloodTypes.valueOf(rs.getString("grupo_sanguineo")));
+                p.setAge(rs.getInt("edad"));
+
+                patients.add(p);
+            }
+
+            rs.close();
+            filter.close();
+
+        } catch (SQLException ex) {
+            logger.error("Error: se ha producido un error al consultar los registros.");
+        }
+
+        logger.info("Desconectando de la base de datos");
+        try {
+            conn.close();
+        } catch (SQLException ex) {
+            logger.error("Error: la conexión con la base de datos no ha podido finalizar correctamente.");
+        }
+
+        return patients;
     }
 }
