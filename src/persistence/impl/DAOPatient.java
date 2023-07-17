@@ -211,7 +211,7 @@ public class DAOPatient implements IDAO<Patient, String> {
 
             affectedRows = filter.executeUpdate();
         } catch (SQLException ex) {
-            logger.error("Error: se ha producido un error al consultar los registros.");
+            logger.error("Error: no se ha podido borrar el registro.");
         }
 
         return affectedRows;

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 //TODO create DAO implementations for each class
-//TODO implement the CRUD operations for Patient
 
 public class Main {
 
@@ -16,9 +15,12 @@ public class Main {
     public static void main(String[] args) {
         showAllPatients();
         showOnePatient("666");
-        insertAPatient();
+        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
+        insertAPatient(patient);
         showAllPatients();
-        updatePatientData();
+        updatePatientData(patient);
+        showAllPatients();
+        deletePatients(patient);
         showAllPatients();
     }
 
@@ -49,24 +51,29 @@ public class Main {
         }
     }
 
-    public static void insertAPatient() {
+    public static void insertAPatient(Patient patient) {
         DAOPatient daoPatient = new DAOPatient();
-        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
 
         int affectedRows = daoPatient.create(patient);
         System.out.println("Registros afectados en el insert: " + affectedRows);
     }
 
-    public static void updatePatientData() {
+    public static void updatePatientData(Patient patient) {
         DAOPatient daoPatient = new DAOPatient();
-        Patient patient = new Patient("222", "Carlos", "76543166", 33, BloodTypes.ABPOS);
+        //patient.setName("");
+        patient.setPhoneNumber("76543166");
+        //patient.setBloodType(BloodTypes.APOS);
+        patient.setAge(33);
 
         int affectedRows = daoPatient.update(patient);
         System.out.println("Registros afectados en el update: " + affectedRows);
     }
 
-    public static void deletePatients() {
+    public static void deletePatients(Patient patient) {
+        DAOPatient daoPatient = new DAOPatient();
 
+        int affectedRows = daoPatient.delete(patient.getDni());
+        System.out.println("Registros afectados en el delete: " + affectedRows);
     }
 
 }
