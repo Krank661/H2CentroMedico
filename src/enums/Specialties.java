@@ -1,5 +1,5 @@
 package enums;
 
 public enum Specialties {
-    GENERAL_PRACTICIONER, PEDIATRIST
+    GENERAL_PRACTICIONER, PEDIATRIST, NONE
 }
