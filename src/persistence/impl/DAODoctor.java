@@ -27,8 +27,8 @@ public class DAODoctor implements IDAODoctor {
         List<Doctor> doctors = new ArrayList<>();
         String query = "SELECT * FROM profesionales_de_la_salud WHERE profesion = 'medico'";
 
-        try(Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
-            ResultSet rs = filter.executeQuery();
+        try(Connection conn = DriverManager.getConnection(URL, USER, PASS); Statement filter = conn.createStatement()) {
+            ResultSet rs = filter.executeQuery(query);
 
             while (rs.next()) {
                 Doctor doctor = new Doctor();
@@ -160,7 +160,34 @@ public class DAODoctor implements IDAODoctor {
 
     @Override
     public List<Doctor> getBySpecialty(Specialties specialty) {
+        logger.info("Registrando el driver");
+        try {
+            Class.forName("org.h2.Driver");
+        } catch (ClassNotFoundException ex) {
+            logger.error("Error: no se pudo cargar el controlador! " + ex.getMessage());
+            System.exit(1);
+        }
 
-        return null;
+        List<Doctor> doctors = new ArrayList<>();
+        String query = "SELECT * FROM profesionales_de_la_salud WHERE especialidad = ?";
+
+        try(Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
+            filter.setString(1, specialty.toString());
+            ResultSet rs = filter.executeQuery();
+
+            while (rs.next()) {
+                Doctor doctor = new Doctor();
+
+                doctor.setId(rs.getInt("id"));
+                doctor.setDni(rs.getString("dni"));
+                doctor.setName(rs.getString("nombre"));
+                doctor.setPhoneNumber(rs.getString("telefono"));
+                doctor.setSpecialty(Specialties.valueOf("especialidad"));
+            }
+        } catch (SQLException ex) {
+            logger.error("Error: se ha producido un error al consultar los registros.");
+        }
+
+        return doctors;
     }
 }
