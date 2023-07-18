@@ -1,4 +1,5 @@
 import enums.BloodTypes;
+import enums.Specialties;
 import model.impl.Doctor;
 import model.impl.Patient;
 import org.apache.log4j.Logger;
@@ -139,9 +140,24 @@ public class Main {
         }
     }
 
+    public static void showDoctorsBySpecialty(Specialties specialty) {
+        DAODoctor daoDoctor = new DAODoctor();
+        List<Doctor> doctors = new ArrayList<>();
+
+        try {
+            doctors = daoDoctor.getBySpecialty(specialty);
+        } catch (NullPointerException ex) {
+            logger.error("La lista no contiene médicos.");
+        }
+
+        System.out.println("Registros de los médicos de la especialidad indicada: ");
+        doctors.forEach(System.out::println);
+    }
+
     public static void doctorTests() {
         showAllDoctors();
         showOneDoctorById(1);
+        showDoctorsBySpecialty(Specialties.GENERAL_PRACTICIONER);
     }
 
 }
