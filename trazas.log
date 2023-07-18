@@ -241,3 +241,73 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-17 16:50:09] [ INFO ] [DAOPatient:196] Registrando el driver y conectando a la base de datos.
 [2023-07-17 16:50:09] [ INFO ] [DAOPatient:25] Registrando el driver y conectando a la base de datos.
 [2023-07-17 16:50:09] [ INFO ] [DAOPatient:63] Desconectando de la base de datos
+[2023-07-18 04:59:00] [ INFO ] [DAOPatient:24] Registrando el driver
+[2023-07-18 04:59:00] [ ERROR] [DAOPatient:53] Error: se ha producido un error al consultar los registros.
+[2023-07-18 04:59:00] [ INFO ] [DAOPatient:61] Registrando el driver y conectando a la base de datos.
+[2023-07-18 04:59:00] [ ERROR] [DAOPatient:69] Error: no se ha podido establecer conexión con la base de datos.
+[2023-07-18 05:21:22] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:21:22] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:21:22] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:21:23] [ ERROR] [DAOPatient:85] Error: se ha producido un error al consultar los registros por dni.
+[2023-07-18 05:21:23] [ INFO ] [DAOPatient:94] Registrando el driver
+[2023-07-18 05:21:23] [ ERROR] [DAOPatient:114] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-18 05:21:23] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:21:23] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:21:23] [ INFO ] [DAOPatient:122] Registrando el driver
+[2023-07-18 05:21:23] [ ERROR] [DAOPatient:142] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-18 05:21:23] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:21:23] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:21:23] [ INFO ] [DAOPatient:172] Registrando el driver
+[2023-07-18 05:21:24] [ ERROR] [DAOPatient:199] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:21:24] [ INFO ] [DAOPatient:207] Registrando el driver
+[2023-07-18 05:21:24] [ ERROR] [DAOPatient:235] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:21:24] [ INFO ] [DAOPatient:149] Registrando el driver
+[2023-07-18 05:21:24] [ ERROR] [DAOPatient:165] Error: no se ha podido borrar el registro.
+[2023-07-18 05:21:24] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:21:24] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:22:06] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:25:27] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:27] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:25:29] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:25:30] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:30] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:25:30] [ ERROR] [DAOPatient:85] Error: se ha producido un error al consultar los registros por dni.
+[2023-07-18 05:25:30] [ INFO ] [DAOPatient:94] Registrando el driver
+[2023-07-18 05:25:30] [ ERROR] [DAOPatient:114] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-18 05:25:30] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:25:30] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:30] [ INFO ] [DAOPatient:122] Registrando el driver
+[2023-07-18 05:25:31] [ ERROR] [DAOPatient:142] Error: no se ha podido guardar el nuevo paciente.
+[2023-07-18 05:25:31] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:25:31] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:31] [ INFO ] [DAOPatient:172] Registrando el driver
+[2023-07-18 05:25:31] [ ERROR] [DAOPatient:199] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:31] [ INFO ] [DAOPatient:207] Registrando el driver
+[2023-07-18 05:25:31] [ ERROR] [DAOPatient:235] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:31] [ INFO ] [DAOPatient:149] Registrando el driver
+[2023-07-18 05:25:31] [ ERROR] [DAOPatient:165] Error: no se ha podido borrar el registro.
+[2023-07-18 05:25:31] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:25:32] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:25:53] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:26:30] [ ERROR] [DAOPatient:51] Error: se ha producido un error al consultar los registros.
+[2023-07-18 05:26:30] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:28:27] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:28:28] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:28:28] [ INFO ] [DAOPatient:94] Registrando el driver
+[2023-07-18 05:28:28] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:28:29] [ INFO ] [DAOPatient:122] Registrando el driver
+[2023-07-18 05:28:29] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:28:29] [ INFO ] [DAOPatient:172] Registrando el driver
+[2023-07-18 05:28:29] [ INFO ] [DAOPatient:207] Registrando el driver
+[2023-07-18 05:28:29] [ INFO ] [DAOPatient:149] Registrando el driver
+[2023-07-18 05:28:30] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:31:17] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:31:18] [ INFO ] [DAOPatient:59] Registrando el driver
+[2023-07-18 05:31:18] [ INFO ] [DAOPatient:94] Registrando el driver
+[2023-07-18 05:31:18] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:31:18] [ INFO ] [DAOPatient:122] Registrando el driver
+[2023-07-18 05:31:19] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 05:31:19] [ INFO ] [DAOPatient:172] Registrando el driver
+[2023-07-18 05:31:19] [ INFO ] [DAOPatient:207] Registrando el driver
+[2023-07-18 05:31:19] [ INFO ] [DAOPatient:149] Registrando el driver
+[2023-07-18 05:31:20] [ INFO ] [DAOPatient:22] Registrando el driver

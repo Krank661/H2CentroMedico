@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+    //TODO implement the queries of v2
 
     public static Logger logger = Logger.getLogger(Main.class);
 
