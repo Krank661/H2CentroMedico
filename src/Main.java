@@ -101,8 +101,8 @@ public class Main {
 
     public static void patientTests() {
         showAllPatients();
-        showOnePatientById("666");
-        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
+        showOnePatientById("42512851L");
+        Patient patient = new Patient("16992267M", "Carlos", "76543123", 32, BloodTypes.ABPOS);
         insertAPatient(patient);
         showAllPatients();
         updatePatientData(patient);
@@ -154,10 +154,20 @@ public class Main {
         doctors.forEach(System.out::println);
     }
 
+    public static void insertADoctor(Doctor doctor) {
+        DAODoctor daoDoctor = new DAODoctor();
+
+        int affectedRows = daoDoctor.create(doctor);
+        System.out.println("Registros afectados en el insert: " + affectedRows);
+    }
+
     public static void doctorTests() {
-        showAllDoctors();
-        showOneDoctorById(1);
-        showDoctorsBySpecialty(Specialties.GENERAL_PRACTICIONER);
+        //showAllDoctors();
+        //showOneDoctorById(1);
+        //showDoctorsBySpecialty(Specialties.GENERAL_PRACTICIONER);
+        Doctor doctor = new Doctor("64747065H", "Tenma", "999999", 4, Specialties.PEDIATRIST);
+        //insertADoctor(doctor);
+        //showAllDoctors();
     }
 
 }
