@@ -184,7 +184,9 @@ public class DAODoctor implements IDAODoctor {
                 doctor.setDni(rs.getString("dni"));
                 doctor.setName(rs.getString("nombre"));
                 doctor.setPhoneNumber(rs.getString("telefono"));
-                doctor.setSpecialty(Specialties.valueOf("especialidad"));
+                doctor.setSpecialty(Specialties.valueOf(rs.getString("especialidad")));
+
+                doctors.add(doctor);
             }
         } catch (SQLException ex) {
             logger.error("Error: se ha producido un error al consultar los registros.");
