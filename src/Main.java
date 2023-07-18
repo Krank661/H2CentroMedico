@@ -1,6 +1,8 @@
 import enums.BloodTypes;
+import model.impl.Doctor;
 import model.impl.Patient;
 import org.apache.log4j.Logger;
+import persistence.impl.DAODoctor;
 import persistence.impl.DAOPatient;
 
 import java.util.ArrayList;
@@ -12,17 +14,8 @@ public class Main {
     public static Logger logger = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-        showAllPatients();
-        showOnePatientById("666");
-        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
-        insertAPatient(patient);
-        showAllPatients();
-        updatePatientData(patient);
-        showAllPatients();
-        showPatientsByName("Carlos");
-        showPatientsByPhoneNumber("123456");
-        deletePatients(patient);
-        showAllPatients();
+        //patientTests();
+        doctorTests();
     }
 
     public static void showAllPatients() {
@@ -35,7 +28,7 @@ public class Main {
             logger.error("La lista no contiene pacientes.");
         }
 
-        System.out.println("Todos los registros: ");
+        System.out.println("Todos los registros de pacientes: ");
         patients.forEach(System.out::println);
 
     }
@@ -103,6 +96,38 @@ public class Main {
 
         int affectedRows = daoPatient.delete(patient.getDni());
         System.out.println("Registros afectados en el delete: " + affectedRows);
+    }
+
+    public static void patientTests() {
+        showAllPatients();
+        showOnePatientById("666");
+        Patient patient = new Patient("222", "Carlos", "76543123", 32, BloodTypes.ABPOS);
+        insertAPatient(patient);
+        showAllPatients();
+        updatePatientData(patient);
+        showAllPatients();
+        showPatientsByName("Carlos");
+        showPatientsByPhoneNumber("123456");
+        deletePatients(patient);
+        showAllPatients();
+    }
+
+    public static void showAllDoctors() {
+        DAODoctor daoDoctor = new DAODoctor();
+        List<Doctor> doctors = new ArrayList<>();
+
+        try{
+            doctors = daoDoctor.getAll();
+        } catch (NullPointerException ex) {
+            logger.error("La lista no contiene médicos");
+        }
+
+        System.out.println("Todos los registros de médicos: ");
+        doctors.forEach(System.out::println);
+    }
+
+    public static void doctorTests() {
+        showAllDoctors();
     }
 
 }

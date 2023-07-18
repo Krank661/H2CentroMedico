@@ -311,3 +311,9 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-18 05:31:19] [ INFO ] [DAOPatient:207] Registrando el driver
 [2023-07-18 05:31:19] [ INFO ] [DAOPatient:149] Registrando el driver
 [2023-07-18 05:31:20] [ INFO ] [DAOPatient:22] Registrando el driver
+[2023-07-18 12:08:03] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 12:08:42] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 12:09:25] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 15:17:48] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 15:18:25] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 15:20:00] [ INFO ] [DAODoctor:19] Registrando el driver

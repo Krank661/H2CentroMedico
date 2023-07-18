@@ -25,7 +25,7 @@ public class DAODoctor implements IDAODoctor {
         }
 
         List<Doctor> doctors = new ArrayList<>();
-        String query = "SELECT * FROM profesionales_de_la_salud WHERE profesion = 'medico'";
+        String query = "SELECT * FROM profesionales_de_la_salud WHERE profesion = 'médico'";
 
         try(Connection conn = DriverManager.getConnection(URL, USER, PASS); Statement filter = conn.createStatement()) {
             ResultSet rs = filter.executeQuery(query);
@@ -37,7 +37,9 @@ public class DAODoctor implements IDAODoctor {
                 doctor.setDni(rs.getString("dni"));
                 doctor.setName(rs.getString("nombre"));
                 doctor.setPhoneNumber(rs.getString("telefono"));
-                doctor.setSpecialty(Specialties.valueOf("especialidad"));
+                doctor.setSpecialty(Specialties.valueOf(rs.getString("especialidad")));
+
+                doctors.add(doctor);
             }
         } catch (SQLException ex) {
             logger.error("Error: se ha producido un error al consultar los registros.");
