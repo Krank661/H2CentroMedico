@@ -83,6 +83,7 @@ public class Main {
 
     public static void updatePatientData(Patient patient) {
         DAOPatient daoPatient = new DAOPatient();
+
         //patient.setName("");
         patient.setPhoneNumber("76543166");
         //patient.setBloodType(BloodTypes.APOS);
@@ -161,6 +162,18 @@ public class Main {
         System.out.println("Registros afectados en el insert: " + affectedRows);
     }
 
+    public static void updateDoctorData(Doctor doctor) {
+        DAODoctor daoDoctor = new DAODoctor();
+
+        //doctor.setDni("");
+        //doctor.setName("");
+        doctor.setPhoneNumber("999287412");
+        //doctor.setSpecialty(Specialties.GENERAL_PRACTICIONER);
+
+        int affectedRows = daoDoctor.update(doctor);
+        System.out.println("Registros afectados en el update: " + affectedRows);
+    }
+
     public static void doctorTests() {
         //showAllDoctors();
         //showOneDoctorById(1);
@@ -168,6 +181,8 @@ public class Main {
         Doctor doctor = new Doctor("64747065H", "Tenma", "999999", 4, Specialties.PEDIATRIST);
         //insertADoctor(doctor);
         //showAllDoctors();
+        updateDoctorData(doctor);
+        showAllDoctors();
     }
 
 }

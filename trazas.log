@@ -353,3 +353,5 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-18 22:14:32] [ INFO ] [DAODoctor:87] Registrando el driver
 [2023-07-18 22:14:33] [ ERROR] [DAODoctor:107] Error: no se ha podido guardar el médico.
 [2023-07-18 22:14:33] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-18 22:49:26] [ INFO ] [DAODoctor:115] Registrando el driver
+[2023-07-18 22:49:27] [ INFO ] [DAODoctor:19] Registrando el driver
