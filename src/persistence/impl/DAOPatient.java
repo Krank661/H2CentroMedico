@@ -65,8 +65,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         Patient p = null;
+        String query = "SELECT * FROM pacientes WHERE dni = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("SELECT * FROM pacientes WHERE dni = ?")) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
 
             filter.setString(1, dni);
             ResultSet rs = filter.executeQuery();
@@ -100,8 +101,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         int affectedRows = 0;
+        String query = "INSERT INTO pacientes (dni, nombre, telefono, grupo_sanguineo, edad) VALUES (?, ?, ?, ?, ?)";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("INSERT INTO pacientes (dni, nombre, telefono, grupo_sanguineo, edad) VALUES (?, ?, ?, ?, ?)")) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
 
             filter.setString(1, patient.getDni());
             filter.setString(2, patient.getName());
@@ -128,8 +130,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         int affectedRows = 0;
+        String query = "UPDATE pacientes SET nombre = ?, telefono = ?, grupo_sanguineo = ?, edad = ? WHERE dni = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("UPDATE pacientes SET nombre = ?, telefono = ?, grupo_sanguineo = ?, edad = ? WHERE dni = ?")) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
 
             filter.setString(1, patient.getName());
             filter.setString(2, patient.getPhoneNumber());
@@ -155,8 +158,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         int affectedRows = 0;
+        String query = "DELETE FROM pacientes WHERE dni = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("DELETE FROM pacientes WHERE dni = ?")) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
 
             filter.setString(1, dni);
 
@@ -178,8 +182,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         List<Patient> patients = new ArrayList<>();
+        String query = "SELECT * FROM pacientes WHERE nombre = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("SELECT * FROM pacientes WHERE nombre = ?")) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
 
             filter.setString(1, name);
             ResultSet rs = filter.executeQuery();
@@ -213,8 +218,9 @@ public class DAOPatient implements IDAOPatient {
         }
 
         List<Patient> patients = new ArrayList<>();
+        String query = "SELECT * FROM pacientes WHERE telefono = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement("SELECT * FROM pacientes WHERE telefono = ?")){
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)){
 
             filter.setString(1, phoneNumber);
             ResultSet rs = filter.executeQuery();
