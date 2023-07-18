@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS pacientes (dni VARCHAR(255) PRIMARY KEY, nombre VARCH
 CREATE TABLE IF NOT EXISTS profesionales_de_la_salud(id INT PRIMARY KEY, dni VARCHAR(255), nombre VARCHAR(255), telefono VARCHAR(255), especialidad VARCHAR(255), profesion VARCHAR(255));
 --delete initial records to avoid duplicates
 DELETE FROM pacientes WHERE dni = '42512851L';
-DELETE FROM pacientes WHERE dni = '33375462653K';
+DELETE FROM pacientes WHERE dni = '75462653K';
 DELETE FROM pacientes WHERE dni = '68769297X';
 DELETE FROM profesionales_de_la_salud WHERE id = 1;
 DELETE FROM profesionales_de_la_salud WHERE id = 2;
