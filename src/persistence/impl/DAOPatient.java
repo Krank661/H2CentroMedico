@@ -28,12 +28,12 @@ public class DAOPatient implements IDAOPatient {
         }
 
         List<Patient> patients = new ArrayList<>();
-        String SQL_SELECT_ALL = "SELECT * FROM pacientes";
+        String query = "SELECT * FROM pacientes";
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASS);
              Statement stmt = conn.createStatement()) {
 
-            ResultSet rs = stmt.executeQuery(SQL_SELECT_ALL);
+            ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
                 Patient p = new Patient();
