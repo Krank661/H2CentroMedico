@@ -126,8 +126,22 @@ public class Main {
         doctors.forEach(System.out::println);
     }
 
+    public static void showOneDoctorById(Integer id) {
+        DAODoctor daoDoctor = new DAODoctor();
+
+        Doctor doctor = daoDoctor.getByID(id);
+
+        if(doctor != null) {
+            System.out.println("Registro del médico con el id indicado: ");
+            System.out.println(doctor);
+        } else {
+            System.out.println("No hay ningún médico registrado con ese dni.");
+        }
+    }
+
     public static void doctorTests() {
         showAllDoctors();
+        showOneDoctorById(1);
     }
 
 }
