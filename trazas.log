@@ -355,3 +355,18 @@ INSERT INTO pacientes(id, dni, nombre, telefono, grupo_sanguineo, edad) VALUES (
 [2023-07-18 22:14:33] [ INFO ] [DAODoctor:19] Registrando el driver
 [2023-07-18 22:49:26] [ INFO ] [DAODoctor:115] Registrando el driver
 [2023-07-18 22:49:27] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 11:43:38] [ INFO ] [DAODoctor:142] Registrando el driver
+[2023-07-19 11:43:39] [ ERROR] [DAODoctor:158] Error: no se ha podido borrar el médico.
+[2023-07-19 11:43:39] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 11:45:10] [ INFO ] [DAODoctor:142] Registrando el driver
+[2023-07-19 12:20:20] [ INFO ] [DAODoctor:142] Registrando el driver
+[2023-07-19 12:20:20] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 12:21:13] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 12:21:13] [ INFO ] [DAODoctor:53] Registrando el driver
+[2023-07-19 12:21:13] [ INFO ] [DAODoctor:165] Registrando el driver
+[2023-07-19 12:21:13] [ INFO ] [DAODoctor:87] Registrando el driver
+[2023-07-19 12:21:14] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 12:21:14] [ INFO ] [DAODoctor:115] Registrando el driver
+[2023-07-19 12:21:14] [ INFO ] [DAODoctor:19] Registrando el driver
+[2023-07-19 12:21:14] [ INFO ] [DAODoctor:142] Registrando el driver
+[2023-07-19 12:21:15] [ INFO ] [DAODoctor:19] Registrando el driver

@@ -23,7 +23,7 @@ public class Main {
         DAOPatient daoPatient = new DAOPatient();
         List<Patient> patients = new ArrayList<>();
 
-        try{
+        try {
             patients = daoPatient.getAll();
         } catch (NullPointerException ex) {
             logger.error("La lista no contiene pacientes.");
@@ -38,7 +38,7 @@ public class Main {
         DAOPatient daoPatient = new DAOPatient();
 
         Patient patient = daoPatient.getByID(dni);
-        if(patient != null) {
+        if (patient != null) {
             System.out.println("Registro del paciente con el dni indicado:");
             System.out.println(patient);
         } else {
@@ -50,7 +50,7 @@ public class Main {
         DAOPatient daoPatient = new DAOPatient();
         List<Patient> patients = new ArrayList<>();
 
-        try{
+        try {
             patients = daoPatient.getByName(name);
         } catch (NullPointerException ex) {
             logger.error("La lista no contiene pacientes.");
@@ -64,7 +64,7 @@ public class Main {
         DAOPatient daoPatient = new DAOPatient();
         List<Patient> patients = new ArrayList<>();
 
-        try{
+        try {
             patients = daoPatient.getByPhoneNumber(phoneNumber);
         } catch (NullPointerException ex) {
             logger.error("La lista no contiene pacientes.");
@@ -93,7 +93,7 @@ public class Main {
         System.out.println("Registros afectados en el update: " + affectedRows);
     }
 
-    public static void deletePatients(Patient patient) {
+    public static void deleteAPatient(Patient patient) {
         DAOPatient daoPatient = new DAOPatient();
 
         int affectedRows = daoPatient.delete(patient.getDni());
@@ -110,7 +110,7 @@ public class Main {
         showAllPatients();
         showPatientsByName("Carlos");
         showPatientsByPhoneNumber("123456");
-        deletePatients(patient);
+        deleteAPatient(patient);
         showAllPatients();
     }
 
@@ -118,7 +118,7 @@ public class Main {
         DAODoctor daoDoctor = new DAODoctor();
         List<Doctor> doctors = new ArrayList<>();
 
-        try{
+        try {
             doctors = daoDoctor.getAll();
         } catch (NullPointerException ex) {
             logger.error("La lista no contiene médicos");
@@ -133,7 +133,7 @@ public class Main {
 
         Doctor doctor = daoDoctor.getByID(id);
 
-        if(doctor != null) {
+        if (doctor != null) {
             System.out.println("Registro del médico con el id indicado: ");
             System.out.println(doctor);
         } else {
@@ -174,14 +174,23 @@ public class Main {
         System.out.println("Registros afectados en el update: " + affectedRows);
     }
 
+    public static void deleteADoctor(Doctor doctor) {
+        DAODoctor daoDoctor = new DAODoctor();
+
+        int affectedRows = daoDoctor.delete(doctor.getId());
+        System.out.println("Registros afectados en el delete: " + affectedRows);
+    }
+
     public static void doctorTests() {
-        //showAllDoctors();
-        //showOneDoctorById(1);
-        //showDoctorsBySpecialty(Specialties.GENERAL_PRACTICIONER);
+        showAllDoctors();
+        showOneDoctorById(1);
+        showDoctorsBySpecialty(Specialties.GENERAL_PRACTICIONER);
         Doctor doctor = new Doctor("64747065H", "Tenma", "999999", 4, Specialties.PEDIATRIST);
-        //insertADoctor(doctor);
-        //showAllDoctors();
+        insertADoctor(doctor);
+        showAllDoctors();
         updateDoctorData(doctor);
+        showAllDoctors();
+        deleteADoctor(doctor);
         showAllDoctors();
     }
 
