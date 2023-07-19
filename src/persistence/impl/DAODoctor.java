@@ -148,7 +148,7 @@ public class DAODoctor implements IDAODoctor {
         }
 
         int affectedRows = 0;
-        String query = "DELETE FROM profesionales_la_salud WHERE id = ?";
+        String query = "DELETE FROM profesionales_de_la_salud WHERE id = ?";
 
         try(Connection conn = DriverManager.getConnection(URL, USER, PASS); PreparedStatement filter = conn.prepareStatement(query)) {
             filter.setInt(1, id);
